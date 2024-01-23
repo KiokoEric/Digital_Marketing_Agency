@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --H1: 68px;
+    --H2: 45px;
+    --H3: 25px;
+    --H4: 18px;
+    --H5: 17px;
+    --Paragraph: 16px;
+    --White: hsl(0, 0%, 100%);
+    --Gray: hsl(220, 5%, 49%);
+    --Black: hsl(0, 0%, 0%);
+    --Eerie-black: hsl(240, 6%, 10%);
+    --Orange: hsl(25, 100%, 50%);
+    --Lavender-gray: hsl(230, 19%, 81%);
+    --Persian-rose: hsl(328, 100%, 59%); 
+    --Red: hsl(341, 100%, 49%);
+}
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: var(--Black);
+}
+li {
+    list-style-type: none;
+}
+
+            /* HEADER SECTION */
+
+header {
+    background-color:var(--White) ;
+    box-shadow: 0px 1px 400px rgba(0, 0, 0, 0.2);
+    padding: 1.2rem 0rem;
+    position: sticky;
+    top: 0;
+    margin-bottom: 5rem;
+    z-index: 2;
+}
+header article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+    margin: auto;
+}
+header h3 {
+    font-size: var(--H2);
+    margin-top: 0.4rem;
+}
+header article section:last-child {
+    display: flex;
+    flex-direction: row;
+}
+header nav {
+    margin-top: 1rem;
+}
+header a {
+    color: var(--Black);
+    font-size: var(--H4);
+    font-weight: 500;
+    margin-right: 1.8rem;
+}
+header button {
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(180deg, var(--Orange), rgb(255, 102, 0));
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--Paragraph);
+    font-weight: 500;
+    padding: 0.8rem 1.7rem;
+}
+
+            /* MAIN SECTION */
+
+main article {
+    margin-bottom: 13.5rem;
+}
+main article:first-child {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    width: 1100px;
+    margin: auto;
+    margin-bottom: 15rem;
+}
+main article:first-child h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--H5);
+    font-weight: 500;
+    margin-top: 5.7rem;
+    margin-bottom: 1rem;
+}
+main article:first-child h1 {
+    color: var(--Eerie-black);
+    font-size: var(--H1);
+    line-height: 5rem;
+    margin-bottom: 0.6rem;
+}
+main article:first-child p {
+    color: var(--Gray);
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--Paragraph);
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+main button {
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(180deg, var(--Orange), rgb(255, 102, 0));
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--Paragraph);
+    font-weight: 500;
+    padding: 0.8rem 1.8rem;
+}
+main article h2 {
+    font-size: var(--H2);
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+main article:nth-child(2) h3 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: var(--H3);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+main article h2 + p {
+    color: var(--Gray);
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--Paragraph);
+    width: 580px;
+    margin: auto;
+    margin-bottom: 2rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+main article:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    width: 1100px;
+    margin: auto;
+}
+main article:nth-child(2) section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.2rem;
+}
+main article:nth-child(2) figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid  hsl(204, 12%, 92%);
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--Paragraph);
+    line-height: 1.8rem;
+    padding: 2rem 2rem 1.2rem 2rem;
+    width: 370px;
+    text-align: center;
+}
+main article:nth-child(2) figure p {
+    color: var(--Gray);
+}
+.icon {
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1rem;
+}
+.cyan {
+    background-color: rgb(27, 179, 153);
+}
+.purple {
+    background-color: rgb(118, 44, 187);
+}
+.yellow {
+    background-color: rgb(226, 206, 28);
+}
+.red {
+    background-color: rgb(216, 48, 48);
+}
+.green {
+    background-color: rgb(96, 199, 65);
+}
+.orange {
+    background-color: var(--Orange);
+}
+main article:nth-child(3) div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    width: 1100px;
+    margin: auto;
+}
+main article:nth-child(3) section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+}
+main article:nth-child(3) section:last-child {
+    margin-top: -10rem;
+}
+main article:nth-child(3) figcaption {
+    position: relative;
+    top: -12.5rem;
+    left: 2rem;
+}
+main article:nth-child(3) img {
+    border-radius: 8px;
+    width: 360px;
+}
+main article:nth-child(3) figure p {
+    color: var(--Lavender-gray);
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--Paragraph);
+    line-height: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+main article:nth-child(3) h3 {
+    color: var(--White);
+    font-family: 'League Spartan', sans-serif;
+    font-size: var(--H3);
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    padding-right: 3rem;
+}
+main article:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    width: 1100px;
+    margin: auto;
+}
+main article:nth-child(4) img {
+    width: 550px;
+    border-radius: 5px;
+}
+main article:nth-child(4) h2 {
+    text-align: left;
+}
+main article:nth-child(4) p {
+    color: var(--Gray);
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--Paragraph);
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+    width: 520px;
+    text-align: left;
+}
+main article:nth-child(4) h3 {
+    color: var(--Black);
+    font-family: 'League Spartan', sans-serif;
+    font-size: var(--H3);
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+main article:nth-child(4) li {
+    display: flex;
+    flex-direction: row;
+    width: 520px;
+}
+#list {
+    color: var(--Red);
+    font-size: 22px;
+    margin-right: 0.6rem;
+}
+main article:nth-child(5) {
+    background-image: url(../Images/Digital_Marketing_Agency/cta-bg.jpg), linear-gradient(130deg, var(--Orange), var(--Persian-rose));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    height: 400px;
+    width: 100%;
+}
+main article:nth-child(6) div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.6rem;
+    width: 1100px;
+    margin: auto;
+}
+main article:nth-child(6) img {
+    margin-bottom: 1.5rem;
+}
+main article:nth-child(6) section:first-child p,h3 {
+    padding-left: 1.5rem;
+}
+main article:nth-child(6) section:last-child figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+main article:nth-child(6) section:last-child img {
+    margin-bottom: 1.5rem;
+    width: 170px;
+}
+main article:nth-child(6) h3 {
+    color: var(--Black);
+    font-family: 'League Spartan', sans-serif;
+    font-size: var(--H3);
+    line-height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+main article:nth-child(6) div p {
+    color: var(--Persian-rose);
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--Paragraph);
+    font-weight: bold;
+}
+main article:nth-child(6) figcaption a:hover {
+    color: var(--Persian-rose);
+}
+main article:nth-child(7) {
+    margin-bottom: 1rem;
+}
+fieldset {
+    border: none;
+    box-shadow: 1px 1px 200px hsl(328, 100%, 59%,0.15); 
+    width: 1100px;
+    margin: auto;
+    padding: 3rem 3rem;
+}
+form div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+form input  {
+    border: none;
+    margin-right: 1rem;
+    height: 60px;
+    width: 500px;
+}
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--Paragraph);
+    padding-left: 1rem;
+}
+textarea {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--Paragraph);
+    padding: 1rem 0rem 0rem 1rem
+}
+input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+}
+form label {
+    color: var(--Gray);
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--Paragraph);
+}
+form label span {
+    color: var(--Red);
+    font-weight: 500;
+}
+form button {
+    margin-top: 2rem;
+}
+
+            /* FOOTER SECTION */
+
+footer {
+    box-shadow: 1px 1px 200px hsl(328, 100%, 59%,0.15); 
+    width: 1100px;
+    margin: auto;
+    padding: 3rem 4rem;
+}
+footer article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer figure {
+    display: flex;
+    flex-direction: row;
+}
+footer figcaption h3 {
+    font-size: var(--H3);
+    margin-bottom: 0.6rem;
+}
+footer p {
+    color: var(--Gray);
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--Paragraph);
+    padding-left: 1.6rem;
+}
+.contact {
+    font-size: 30px;
+    color: var(--Red);
+    margin-right: 1rem;
+}
